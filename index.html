@@ -50,6 +50,8 @@
                 background: rgb(232, 226, 209);
                 display: flex;
                 box-shadow: -1px 1px 20px 15px black;
+                margin-top: 30px;
+                border-radius: 15px;
             }
             .sidebar {
                 margin-right: 25px;
@@ -57,6 +59,8 @@
             }
             .sidebar img {
                 width: 200px;
+                padding-top: 5px;
+                padding-left: 5px;
             }
             .content {
                 flex: 1;
@@ -67,7 +71,7 @@
             }
         </style>
     <body>
-        <div>
+        <div id="all-contents">
             <nav>
                 <header>My Website</header>
                 <ul>
@@ -76,43 +80,35 @@
                 </ul>
             </nav>
                    
-            <main style="
-                margin-top: 30px;
-                border-radius: 15px;
-            ">
+            <main>
                 <div class="sidebar">
-                     
-                    <img src="8b952f0129d4e7bf69bbebf0c661bae5b60e5be2_hq" style="
-                        padding-top: 5px;
-                        padding-left: 5px;
-                    ">
-                        
+                    <img src="img/tf2medic.jpg">
                 </div>
                 <div class="content">
                     <header>England DiGiovanni</header>
                     <p>Student at Fontainebleau High School</p>
-                <section class="Interest"></section>
-                    <header>Interests and Hobbies</header>
+                    <section class="interest">
+                        <header>Interests and Hobbies</header>
+                        <ul>
+                            <li>Video games</li>
+                            <li>Drawing</li>
+                            <li>Reading</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <main>
+                <div class="content">
+                    <header style="
+                        padding-left: 30px;
+                        padding-top: 5px;
+                    ">My Bio:</header>
                     
                     <ul>
-                        <li>Video games</li>
-                        <li>Drawing</li>
-                        <li>Reading</li>
+                        <li> I'm an artist, gamer and anime lover. My favourite game is Team Fortress 2. I draw comics from anime and TF2!</li>
                     </ul>
                 </div>
             </main>
         </div>
-        <main style="
-            margin-top: 30px; 
-            border-radius: 15px; 
-            <div> class="content">
-                <header style="
-                    padding-left: 30px;
-                    padding-top: 5px;
-                ">My Bio:</header>
-                
-                <ul>
-                    <li> I'm an artist, gamer and anime lover. My favourite game is Team Fortress 2. I draw comics from anime and TF2!</li>
-                </ul>
     </body>
 </html>
