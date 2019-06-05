@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
     <head>
-        <title>My Awesome Website!</title>
-    </head>
-     <style>
+      <title>My Portfolio</title>
+      <style>
             body {
                 background: url("https://wallimpex.com/data/out/404/deep-space-desktop-wallpaper-7762485.jpg");
                 color: rgb(45, 45, 45);
                 padding: 10px;
                 font-family: arial;
+                font-size: 10px;
             }
             header {
                 font-size: 1.5em;
@@ -50,6 +50,7 @@
                 background: rgb(232, 226, 209);
                 display: flex;
                 box-shadow: -1px 1px 20px 15px black;
+                margin-top: 30px;
             }
             .sidebar {
                 margin-right: 25px;
@@ -62,57 +63,54 @@
                 flex: 1;
                 padding: 15px;
             }
+            /* portfolio styles */
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
+            }
             .interests header {
                 font-size: 1.25em;
             }
         </style>
+    </head>
+
     <body>
-        <div>
-            <nav>
-                <header>My Website</header>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
-                   
-            <main style="
-                margin-top: 30px;
-                border-radius: 15px;
-            ">
-                <div class="sidebar">
-                     
-                    <img src="8b952f0129d4e7bf69bbebf0c661bae5b60e5be2_hq" style="
-                        padding-top: 5px;
-                        padding-left: 5px;
-                    ">
-                        
-                </div>
-                <div class="content">
-                    <header>England DiGiovanni</header>
-                    <p>Student at Fontainebleau High School</p>
-                <section class="Interest"></section>
-                    <header>Interests and Hobbies</header>
-                    
-                    <ul>
-                        <li>Video games</li>
-                        <li>Drawing</li>
-                        <li>Reading</li>
-                    </ul>
-                </div>
-            </main>
-        </div>
-        <main style="
-            margin-top: 30px; 
-            border-radius: 15px; 
-            <div> class="content">
-                <header style="
-                    padding-left: 30px;
-                    padding-top: 5px;
-                ">My Bio:</header>
-                
-                <ul>
-                    <li> I'm an artist, gamer and anime lover. My favourite game is Team Fortress 2. I draw comics from anime and TF2!</li>
-                </ul>
+      <div id="all-contents">
+       <div id="all-contents">
+        <nav>
+            <header>My Portfolio</header>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+          <div class="contents">
+            <h1> portfolio</h1>
+            <ul id="portfolio">
+          </div>
+        </main>
+    </div>
+      </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
     </body>
 </html>
