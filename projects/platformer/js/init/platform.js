@@ -43,6 +43,7 @@
         platform.create(400, 600, 2, 4);  //lower block//
         platform.create(600, 250, 0.9, 1);   //upper middle//
         platform.create(300, 190, 0.5);     //upper -cake-//
+        
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
