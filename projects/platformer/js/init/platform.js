@@ -35,14 +35,14 @@
         platform.create(0, game.world.height - 32, 3, 2);
 
         // example:
-        platform.create(700, 525, 0.5, 4.5);
-        platform.create(300, 635);
-        platform.create(200, 300, 0.5);
-        platform.create(200, 100, 0.5);
-        platform.create(0, 200, 0.5);
-        //platform.create(70, 400, 0.2);
-        
-        
+        platform.create(600, 500, 6, 1);  //lower right platform//
+        platform.create(300, 430, 0.5, 1);   //middle platform//
+        platform.create(0, 560, 0.5);     //lower left platform - !spawn! -//
+        platform.create(0, 380, 0.5);    //middle left platform//
+        platform.create(200, 320, 1, 1);  //upper middle plateform//
+        platform.create(400, 600, 2, 4);  //lower block//
+        platform.create(600, 250, 0.9, 1);   //upper middle//
+        platform.create(300, 190, 0.5);     //upper -cake-//
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
