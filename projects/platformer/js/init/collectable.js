@@ -35,9 +35,9 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
-        //collectable.create(type.steve, 200, 170, 6, 0.7);
-        collectable.create(type.grace);
-        collectable.create(type.max);
+        collectable.create(type.steve, 5, 300, 6, 0.7);  //appears above spawn//
+        collectable.create(type.grace, 300, 120);       //appears under cannon//
+        collectable.create(type.max, 750, 150, 6, 0.7); //appears next to right cannon
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////

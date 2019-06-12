@@ -22,7 +22,7 @@
         // example: 
         cannon.create.onTop(450, 1000);
         cannon.create.onRight(200);
-        
+        cannon.create.onLeft(500, 200)
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
